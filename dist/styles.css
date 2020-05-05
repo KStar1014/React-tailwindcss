@@ -1,0 +1,180 @@
+#dropdown {
+    position: relative;
+    height: 2.5rem;
+
+}
+
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    z-index: 10 !important;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin-top: 0.125rem;
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+#dropdown-menu.show {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#landing {
+    position: relative;
+    height: 80vh;
+}
+
+#landing::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -90vw;
+    bottom: -50vh;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 100vh solid rgba(52, 211, 142, 0.144);
+    z-index: -1;
+    transform: scaleX(-1);
+    animation: slideIn 1.6s ease-out forwards;
+
+}
+
+section {
+    position: relative;
+    height: 200vh;
+}
+
+hr {
+    border-top: 1.5px solid #9CA3AF;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: -90vw;
+    bottom: -50vh;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to bottom, transparent, rgba(52, 211, 142, 0.144) 50%);
+    z-index: -2;
+    transform: scaleY(-1);
+    animation: slideIn 1.6s ease-out forwards;
+}
+
+@media only screen and (max-width: 450px) {
+    #landing {
+        position: relative;
+        height: 85vh;
+    }
+
+}
+
+@media only screen and (min-width: 450px) and (max-width: 900px) {
+    #landing {
+        position: relative;
+        height: 100vh;
+
+    }
+
+}
+
+@keyframes slideIn {
+    to {
+        left: 0;
+        bottom: 0;
+    }
+}
+
+
+
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('../public/images/luxury.jpg');
+}
+
+@keyframes bannerAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.swiper {
+    width: 87vw;
+    height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .cards-container {
+        position: relative;
+        overflow: hidden;
+        max-height: 600px;
+        transition: max-height 1.0s ease-out;
+    }
+
+    .cards-container.expanded {
+        max-height: none;
+        transition: max-height 1.0s ease-out;
+    }
+
+
+
+
+
+    .gradient-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        width: 94vw;
+        background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+    }
+
+    .card {
+        transition: transform 1.0s ease-out;
+    }
+
+    .cards-container.expanded .card {
+        transform: translateY(0);
+    }
+
+    .cards-container .card {
+        transform: translateY(-214%);
+    }
+}
+
+#contactForm {
+    background-color: rgba(52, 211, 142, 0.144)
+}

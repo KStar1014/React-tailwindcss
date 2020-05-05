@@ -1,0 +1,106 @@
+.dark-mode {
+    background-color: #071726;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .card {
+    background-color: #0a1f31;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .card p {
+    color: #bbbbbb;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode nav a {
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode nav span {
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode img {
+    opacity: 100%;
+}
+
+.dark-mode div h2 {
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.dark-mode main div p {
+    color: #c6c6c6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode #dropdown-menu a {
+    color: #0d2941;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode #menu-button {
+    background-color: #081e30;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode hr {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.dark-mode .swiper-slide {
+    background-color: #0a1f31;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode p {
+    color: rgb(189, 194, 200);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode h1 {
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .swiper-pagination {
+    color: #ffffff;
+}
+
+.dark-mode .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+}
+.dark-mode .swiper-pagination-bullet{
+    background-color: #ffffff;
+
+}
+
+.dark-mode label {
+    color: #ffffff;
+}
+
+.dark-mode input {
+    background-color: #071726;
+    border-color: #737373;
+}
+
+.dark-mode textarea {
+    background-color: #071726;
+    border-color: #737373;
+}
+
+.dark-mode #PPS{
+    color: #ffffff;
+}
+
+.dark-mode .socials {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
