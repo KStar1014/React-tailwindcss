@@ -12,11 +12,7 @@
         @apply animate-fade-down;
         @apply animate-ease-out;
     }
-    .animate-fd {
-        @apply animate-duration-[1300ms];
-        @apply animate-fade-down;
-        @apply animate-ease-out;
-    }
+    
 
     .animate-fr {
         @apply animate-duration-[1300ms];
